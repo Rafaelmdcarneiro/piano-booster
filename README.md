@@ -1,12 +1,3 @@
-# == THE URL HAS CHANGED ==
-
-This **PianoBooster** repository has now been transferred to @pianobooster as the new owner.
-
-Please update all your bookmarks and [update](https://docs.github.com/en/free-pro-team@latest/github/using-git/changing-a-remotes-url) any existing local clones to point to the new repository URL https://github.com/pianobooster/PianoBooster
-
-![logo](logo/Logotype_horizontal.png)
-
-
 # INTRODUCTION
 
 **PianoBooster** is a MIDI file player that displays the musical notes AND teaches you how to
@@ -76,33 +67,3 @@ Foundation, either version 3 of the License, or (at your option) any later versi
 without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 See the GNU General Public License in the file "gplv3.txt" or from the web site
 <http://www.gnu.org/licenses/> or [gplv3.txt](gplv3.txt).
-
-The **PianoBooster** documentation and music are released under the Creative Commons License (CC-BY).
-
-[PianoBooster License](license.txt)
-
-# SOURCE CODE
-
-As part of GNU General Public License the source code for **PianoBooster** is available from
-the GitHub site  <https://github.com/pianobooster/PianoBooster>. See the [BUILD.md](BUILD.md) for
-instructions on how to build the source code.
-
-This source code URL has recently changed so please update all your bookmarks and change any existing local clones to point to the new repository URL.
-
-
-# BUGTRACKER
-
-[Issues](https://github.com/pianobooster/PianoBooster/issues)
-
-# CONTRIBUTING
-
-**PianoBooster** is community developing project. You're welcome with patches:
-
-[Pull Requests](https://github.com/pianobooster/PianoBooster/pulls)
-
-We have many [issues](https://github.com/pianobooster/PianoBooster/issues) always.
-
-We are looking for musicians to make music for pianobooster. It can be educational courses or other melodies: [music sources](https://github.com/pianobooster/BoosterMusic).
-
-
-Thanks to everyone who has already made contributions to the Piano Booster project.
