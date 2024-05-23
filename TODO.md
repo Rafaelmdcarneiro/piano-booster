@@ -1,0 +1,47 @@
+PianoBooster TODO
+=================
+
+Piano Booster To Do tasks (in no particular order)
+
+# EASY
+
+- Changing the piano sound to use the same sound as on the part.
+- [Bug] fix patches when all 16 channels are being used (mute parts 15 + 16).
+- Add a tempo display in BPM.
+- Add - one finger play - playing just one note of a cord will be accepted (optional).
+- Add - rhythm practice - any note played at the right time will be accepted.
+
+# MEDIUM
+
+- Adding a high score of your playing ability.
+- Add stars - see if you can collect all 10 stars.
+- Reduce the midi timing jitter by:
+    1. Change to using rtTimer  (as supplied by Pedro).
+    2. Increase the midi tick rate to 1 mSec.
+- Make the graphics move smoothly across the screen, without the flickering or tearing by:
+    1. Synchronise the frame rate to match screen/lcd monitor refresh rate.
+- Display note durations as a piano roll type display.
+- Display note duration using simple musical notation (without any rests or note beams).
+- Automatically adjust the speed (as an option) to match the playing ability.
+- Adding a metronome/drum track to the piece being played.
+- Read the midi file tracks (at present the tracks are split only by midi channel number).
+
+# DIFFICULT
+
+- Reduce the midi timing jitter by:
+    1. Move the conductor realtime engine so it runs in it own thread.
+- Show the rests in each bar.
+- Add note beams.
+- Show a graph of how your playing has improved over time.
+
+# NO PLANS FOR
+
+- Proper beautiful music notation complete with slurs, triplets, correct note spacing etc.
+    (Please use the printed musical score for this instead).
+
+# NON SOFTWARE TASKS
+
+- Writing a user manual.
+- Expand the faq.
+- Get a collection of suitable pieces that can be distributed with PB with the right licence.
+- Writing a music teaching course.

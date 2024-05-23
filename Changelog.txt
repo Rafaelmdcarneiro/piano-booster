@@ -1,0 +1,136 @@
+1.0.0 (13 Dec 2020)
+- Integrated fluidsynth as a build option.
+- Changes necessary for building an AppImage.
+- Added <System Language> to the manual language selection.
+- Fixes required for the Windows build
+- Fixes required for the Mac OS build
+- Now reads left and right hand parts if held in different MIDI tracks.
+- Automaticity detects the left and right hand piano parts.
+- Now defaults to enabling the option mute your part when playing.
+- Added more space for notes at the top of the page.
+
+v0.7.2b (25 Feb 2020)
+- Fixed a problem that prevented a connected MIDI piano keyboard from working.
+- cmake with no options now works correctly (cmake .. && make).
+- Removed the video optimisation setting.
+- Translation can now be tested in-place without doing a make install.
+- Moved the colour coded notes to the preferences dialogue.
+- Added the USE_JACK option (default OFF) which is only needed for BSD Unix.
+- Changed USE_FLUIDSYNTH to EXPERIMENTAL_USE_FLUIDSYNTH as this option is not working yet.
+- Deleted the cmake options: WITH_FLUIDSYNTH, WITH_TIMIDITY, USE_TIMIDITY.
+- Renamed USE_SYSTEM_RTMIDI to USE_BUNDLED_RTMIDI and inverted the logic.
+- Removed the runtime Depends: timidity and no longer recommend jack2.
+- Reverted the URLs in the help and about dialogues URLs so they now point to the main PianoBooster website.
+- Removed the desktop scripts pianobooster-timity and pianobooster-fluidsynth.
+
+v0.7.1
+- Color-coded notes toggle
+
+v0.7.0: (03 September 2019)
+- Switch on Qt5
+- Localization on many languages
+- Music courses added
+- New logo
+- Use FTGL library to draw fonts in GL context
+- Fix Qt strings localization
+- New options: INSTALL_ALL_LANGS, USE_SYSTEM_FONT, NO_DOCS, USE_SYSTEM_RTMIDI,
+  WITH_MAN, WITH_TIMIDITY, WITH_FLUIDSYNTH, USE_FTGL, NO_LANGS, NO_LICENSE,
+  DATA_DIR, USE_TIMIDITY, NO_CHANGELOG
+- Allow to switch between languages within a session
+- Add Piano Keyboard widget
+- Update documentation
+- Fix problem loading midi files with text events
+- New localized Windows installer
+- Use hicolor icon theme
+- Fix USE_FLUIDSYNTH flag
+- Fix incorrect drawing on ARM systems
+- Fix segfault on the next start of program after playing corrupted midi file
+- Fix midi input/output devices detection and reading config file
+- RtMidi: version 4.0.0
+- Fix reading saved position of main window
+- Fix music and translations installation
+- Qmake is alternative for Cmake (Linux, BSD Unix, Windows)
+- Fix macOS building
+- Fix file open dialog hang by disabling timer
+- Add JACK support for tools/fluidsynth
+- Fix BSD Unix building and working
+- Saving skill's and rhythm tapping's settings in config file
+- Fixes for BSD Unix to use fluidsynth+JACK without ALSA
+- Patch for behavior similar to computer touch-typing (gtypist): "Follow Through
+  Errors" mode
+- Add Repeat checkbox to repeat song
+- Save FluidSynth's and TiMidity's settings in config file
+
+v0.6.8: (11 May 2018)
+- French and Galician translations
+- Translate notes
+- Armel patch
+- Install in /usr/share/games
+- RtMidi: version 1.0.15
+
+v0.6.7: (05 September 2013)
+- Reset should be fixed now (keylights)
+- Patch for kotechnology added
+- Fixed some problems on windows
+- Fix for the time signature problem
+- Fixed some compile warning messages
+
+v0.6.5: (26 January 2011)
+- Added rhythm tapping for beginners
+- Added key lights for Yamaha EZ-200, Casio LK 220, LK-300 TV, LK-43 etc.
+
+v0.6.4: (28 November 2009)
+- Added note names for beginners (to be used with a piano key note labels)
+- Added assignable left and right midi channels.
+- Improved MIDI timing accuracy.
+- Greatly reduced the memory footprint.
+- Reduced the CPU load.
+- Reduced the screen flicker (recommend setting the screen refresh rate to 60Hz
+  and for Intel Graphic chips updating the drivers).
+- Added keyboard short-cuts. These are - speed up/down, play from start,
+  play/pause, next previous song, left right both hands.
+- Remembers the song settings in a configuration file called "pb.cfg".
+  these are the midi channels, speed, left right or both hands.
+- Now works well Ubuntu 9.10 and Intel graphic chips.
+  (Those with Ubuntu 9.04 and Intel should upgrade to 9.10 and this version)
+- Fixed various start up issues.
+- Now correctly notates repeated accidentals that occur in a single bar.
+- Added the option to display courtesy accidentals.
+- Added a simple help page.
+- Added an installer for windows.
+- 'make install' now works on Linux.
+- Now works with small screens eg an EEE-701 (for Trev)
+
+v0.6.2: (01 April 2009)
+- added "<None>" as instrument sound.
+- when setting a latency fix of >0 the instrument is automatically set to 'None'
+- turn all the sound off when exiting the program.
+- Added looping to continually play between to bars.
+- Added the option to change the follow mode stop point.
+- Automatically switches the follow mode stop point if you are playing well enough.
+- Added a logo to the source tree in "images/logo64x64.png"
+
+v0.6.1: (11 March 2009)
+- Added a play from bar (so you can start from playing any bar)
+- Added a latency fix for high latency sound generators (e.g. the windows GS software synth)
+  (requires a piano keyboard _with_ it's own speakers/sound generator)
+- Added the ability to "mute your part when playing" along.
+- May have reduced the flickering especially on windows with a low spec machine
+- Added a piano volume slider (so you can adjust the volume of your piano with compared
+  to the accompaniment)
+- Added an icon for the Piano Booster main window.
+- Fix a bug when swapping hands in the middle of a piece.
+- Fix a bug left or right now correctly dim the other stave.
+- Added start-up checks that Open GL is present.
+- Fix the pulse of sound when stopping the music
+- Added "timing markers" which show when the pianist pressed the note.
+- Changed the build so that it now works on the Mac (thanks to Christian)
+
+v0.5.1: (1 January 2009)
+- fixed the windows file open bug
+- changed the default wrong note sound to Harpsichord
+- changed the wrong note sound to use a separate midi channel.
+- on Windows removed the dos console
+
+v0.5.0: (28 November 2008)
+- first release
